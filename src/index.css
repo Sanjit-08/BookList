@@ -5,9 +5,112 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #553055;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App{
+  background: #4c2a4c;
+  margin:20px auto;
+  width:90%;
+  max-width: 700px;
+  color:#eee;
+}
+.navbar{
+  padding:10px 20px;
+  text-align: center;
+  background: #6d3d6d;
+}
+.navbar h1{
+  margin:10px 0;
+}
+.book-list{
+  margin:20px;
+}
+.book-list ul{
+  padding:0;
+  list-style-type: none;
+}
+.book-list li{
+  background: #6d3d6d;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 0;
+}
+.book-list li:hover{
+  opacity: 0.7;
+}
+.book-list .title{
+  font-weight: bold;
+  color:#fff;
+  font-size: 1.2em;
+}
+.book-list .author{
+  font-size: 0.9em;
+  color:#ddd;
+}
+.empty{
+  padding: 20px;
+  text-align: center;
+}
+.delete{
+  float: right;
+  margin-right:10px;
+  cursor: pointer;
+}
+form{
+  padding:20px;
+}
+input[type="text"]{
+  width:100%;
+  padding:20px;
+  margin:10px 0;
+  box-sizing: border-box;
+  background: #3c1f3c;
+  color:#fff;
+  border:0;
+  border-radius: 4px;
+  font-size: 1em;
+}
+input[type="submit"]{
+  margin: 10px auto;
+  background: #eee;
+  border:0;
+  border-radius: 4px;
+  padding: 10px 20px;
+  display: block;
+  font-size: 1em;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background: black;
+  color:#eee;
+}
+
+
+@media (max-width:900px){
+  .App{
+    max-width: 550px;
+  }
+}
+
+@media (max-width:600px){
+  .App{
+    max-width: 400px;
+  }
+  .navbar{
+    padding: 5px 8px;
+  }
+
+  .book-list .title{
+    font-size: .8em;
+  }
+  .book-list .author{
+    font-size: 0.7em;
+    color:#ddd;
+  }
 }
